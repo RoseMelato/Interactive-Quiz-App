@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div id="loginContainer">
+    <h2>Admin Login</h2>
+    <input type="password" id="adminPassword" placeholder="Enter password" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="questionForm" style="display:none; margin-top: 20px;">
+    <h3>Add a New Question</h3>
+    <input type="text" id="questionText" placeholder="Question" /><br /><br />
+    <input type="text" id="optionA" placeholder="Option A" /><br /><br />
+    <input type="text" id="optionB" placeholder="Option B" /><br /><br />
+    <input type="text" id="optionC" placeholder="Option C" /><br /><br />
+    <input type="text" id="optionD" placeholder="Option D" /><br /><br />
+    <label for="correctAnswer">Correct Answer:</label>
+    <select id="correctAnswer">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+    </select>
+    <br /><br />
+    <input type="text" id="category" placeholder="Category (e.g., HTML, CSS, JS)" /><br /><br />
+    <button onclick="addQuestion()">Add Question</button>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
